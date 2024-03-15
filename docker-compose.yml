@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  frontend_device_manager:
+    container_name: "frontend_device_manager"
+    build: 
+      context: ./frontend
+    ports:
+      - "3000:80"
+  backend_device_manager:
+    container_name: "backend_device_manager"
+    build: 
+      context: ./backend
+    ports:
+      - "8000:8000"
+   
